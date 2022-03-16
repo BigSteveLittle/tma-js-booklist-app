@@ -15,17 +15,17 @@ class UI {
         // Store initial books in an Array. 
         const StoredBooks = [
             {
-                title: 'Theres Always Another Album', 
+                title: `There's Always Another Album`, 
                 author: 'Engelbert Humperdink', 
                 isbn: '34344564'
             }, 
             {
-                title: 'My Mothers Favourite Home Made Recipes', 
+                title: `My Mother's Favourite Home Made Recipes`, 
                 author: 'The Boston Strangler', 
                 isbn: '25315289'
             }, 
             {
-                title: 'Gilligans Island: my Thoughts on my favourite Documentary Series', 
+                title: `Gilligan's Island: my Thoughts on my favourite Documentary Series`, 
                 author: 'Vladimir Putin', 
                 isbn: '34344564'
             }
