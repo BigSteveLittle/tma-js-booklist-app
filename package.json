@@ -1,0 +1,17 @@
+{
+  "name": "tma-js-booklist-app",
+  "version": "1.0.0",
+  "description": "Following along with JavaScript BookList App | No Frameworks Youtube video by Brad Traversy of Traversy Media - https://youtu.be/JaMCxVWtW58 ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vanilla",
+    "JavaScript",
+    "book",
+    "list"
+  ],
+  "author": "BigSteveLittle",
+  "license": "ISC"
+}
