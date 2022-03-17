@@ -69,7 +69,7 @@ class UI {
         // Insert the form.
         container.insertBefore(alertDiv, bookForm);
         // Vanish the message.
-        setTimeout(() => document.querySelector('.alert').remove(), 4000);
+        setTimeout(() => document.querySelector('.alert').remove(), 7000);
     }
     // Method to clear fields.
     static clearFields() {
@@ -132,6 +132,9 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     if(title === '' || author === '' || isbn === '') {
         UI.showAlert('Dude. Need ALL fields filled in.', 'danger');
     }
+    if (isNaN(isbn)) {
+        UI.showAlert(`Man the IS book number is a number? Got it?`, 'danger');
+    } 
     else {
         // Instantiate () new book.
         const book = new Book(title, author, isbn);
