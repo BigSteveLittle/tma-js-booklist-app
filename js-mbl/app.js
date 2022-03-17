@@ -128,12 +128,15 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
     const isbn = document.querySelector('#isbn').value;
-    // Validation.
+    // Assign the regex pattern to a variable.
+    const regexIsbn = /^(?:ISBN(?:-13)?:?\ )?(?=[0-9]{13}$|(?=(?:[0-9]+[-\ ]){4})[-\ 0-9]{17}$)97[89][-\ ]?[0-9]{1,5}[-\ ]?[0-9]+[-\ ]?[0-9]+[-\ ]?[0-9]$/;
+    // Validate that all fields have a value.
     if(title === '' || author === '' || isbn === '') {
         UI.showAlert('Dude. Need ALL fields filled in.', 'danger');
     }
-    if (isNaN(isbn)) {
-        UI.showAlert(`Man the IS book number is a number? Got it?`, 'danger');
+    // Validate that the ISBN# is correct according to the International ISBN Agency standard e.g. '978-3-16-148410-0' see: https://stackoverflow.com/questions/41271613/use-regex-to-verify-an-isbn-number.
+    else if (!regexIsbn.test(isbn)) {
+        UI.showAlert(`Man the ISBN# needs to be like "978-3-16-148410-0"`, 'danger');
     } 
     else {
         // Instantiate () new book.
