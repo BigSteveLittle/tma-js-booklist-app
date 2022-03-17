@@ -134,7 +134,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     if(title === '' || author === '' || isbn === '') {
         UI.showAlert('Dude. Need ALL fields filled in.', 'danger');
     }
-    // Validate that the ISBN# is correct according to the International ISBN Agency standard e.g. '978-3-16-148410-0' see: https://stackoverflow.com/questions/41271613/use-regex-to-verify-an-isbn-number.
+    // Validate that the ISBN# is correct according to the International ISBN Agency standard e.g. '978-3-16-148410-0' see: https://regex101.com/r/2NPtZY/1.
     else if (!regexIsbn.test(isbn)) {
         UI.showAlert(`Man the ISBN# needs to be like "978-3-16-148410-0"`, 'danger');
     } 
