@@ -1,6 +1,6 @@
 # JavaScript BookList App | No Frameworks
 
-Check this app for yourself at http://js.bigstevelittle.com/mybooklist.html.
+Check this app out for yourself at http://js.bigstevelittle.com/mybooklist.html.
 
 This repo follows the JavaScript BookList App | No Frameworks Course on YouTube by Brad Traversy of Traversy Media - https://youtu.be/JaMCxVWtW58.
 
